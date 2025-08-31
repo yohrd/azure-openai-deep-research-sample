@@ -1,0 +1,37 @@
+# Azure OpenAI Deep Research Sample - 必要なライブラリ
+# このファイルには、プロジェクトの実行に必要なPythonライブラリが記載されています。
+
+# 環境変数管理
+python-dotenv==1.1.1  # .envファイルから環境変数を読み込む
+
+# Azure認証
+azure-identity==1.24.0  # Azure ADでの認証を行う
+
+# Azure AI関連（以下のライブラリは "pip install --pre azure-ai-projects" で一括インストールされます）
+azure-ai-agents==1.2.0b3      # Azure AI エージェント機能
+azure-ai-projects==1.1.0b3    # Azure AI プロジェクト管理
+azure-core==1.35.0            # Azure SDKのコア機能
+azure-storage-blob==12.27.0b1 # Azure Blob Storage操作
+
+# セキュリティ・暗号化
+certifi==2025.8.3       # SSL証明書の管理
+cryptography==45.0.6    # 暗号化機能
+PyJWT==2.10.1          # JWTトークンの処理
+msal==1.33.0            # Microsoft認証ライブラリ
+msal-extensions==1.3.1  # MSAL拡張機能
+
+# HTTP通信・ネットワーク
+requests==2.32.5        # HTTP リクエスト処理
+urllib3==2.5.0          # URLライブラリ
+idna==3.10              # 国際化ドメイン名処理
+
+# 文字エンコーディング・データ処理
+charset-normalizer==3.4.3  # 文字エンコーディング正規化
+six==1.17.0                 # Python 2/3 互換性
+typing_extensions==4.15.0   # 型ヒント拡張
+isodate==0.7.2             # ISO日付フォーマット処理
+
+# システム・ビルド
+cffi==2.0.0b1           # C言語との外部関数インターフェース
+pycparser==2.22         # Cコードパーサー
+python-env==1.0.0       # Python環境管理
